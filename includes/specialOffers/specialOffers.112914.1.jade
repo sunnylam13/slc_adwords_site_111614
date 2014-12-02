@@ -1,0 +1,43 @@
+//- file://localhost/Applications/MAMP/htdocs/slc.adwords.site.111614/images/specialOffers/60.png
+//- file://localhost/Applications/MAMP/htdocs/slc.adwords.site.111614/images/specialOffers/android-search%202.png
+//- file://localhost/Applications/MAMP/htdocs/slc.adwords.site.111614/images/specialOffers/compass-8x.png
+
+//- ===================================
+//- MIXINS
+//- ===================================
+
+mixin moreButton
+	a(href="#",class='moreButton') do you want to know more?
+	//- you'll add the little red arrow using css :arrow method
+	//- you can change the href attribute using CSS or jQuery
+
+//- ===================================
+//- MAIN CODE
+//- ===================================
+
+section.specialOffers
+	.wrapper.clearfix
+		h2 Current Special Offers
+		//- div.offerShowCase
+		div.audit
+			img(src="images/specialOffers/Audit%20Offer%20Icon%2064x64.png", alt="")
+			h3 Adwords Account Audit
+			p An Adwords account audit finds areas where you can improve.  Reduce costs, increase new customers and discover other profit centres you may be missing.
+			+moreButton
+		div.ppcstrategy
+			img(src="images/specialOffers/60%20Offer%20Icon%2064x64.png", alt="")
+			h3 60 Minute PPC Strategy Session
+			p There’s an ocean of things you can do online that can increase your bottom line profits elsewhere in your business.  Have you thought about them?
+			+moreButton
+		div.tips
+			img(src="images/specialOffers/Blog%20Offer%20Icon%2064x64.png", alt="")
+			h3 Tips &amp; Tricks 
+			h4 (from the Blog)
+			p Discover free tips and tricks on Adwords, Facebook and other marketing and copywriting.
+			+moreButton
+
+//- file://localhost/Applications/MAMP/htdocs/slc.adwords.site.111614/images/specialOffers/30%20Offer%20Icon%2064x64.png
+//- file://localhost/Applications/MAMP/htdocs/slc.adwords.site.111614/images/specialOffers/60%20Offer%20Icon%2064x64.png
+//- file://localhost/Applications/MAMP/htdocs/slc.adwords.site.111614/images/specialOffers/Audit%20Offer%20Icon%2064x64.png
+//- file://localhost/Applications/MAMP/htdocs/slc.adwords.site.111614/images/specialOffers/Blog%20Offer%20Icon%2064x64.png
+//- file://localhost/Applications/MAMP/htdocs/slc.adwords.site.111614/images/specialOffers/Offer%20Arrow.png

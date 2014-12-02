@@ -1,0 +1,72 @@
+doctype html
+html(lang='en')
+head
+    include ./includes/meta/meta.base.jade
+    block extraMetaData
+    block pageTitle
+        title Adwords Management - Sunny Lam Consulting
+    include ./includes/head/links.jade
+    block extraLinkData
+    include ./includes/head/scripts.jade
+    block extraScriptData
+    
+  body
+    block header
+        section.header
+            .wrapper.clearfix
+                block googlePartnerSign
+                    //- store data in ./includes/header/
+                block phoneNumber
+                    //- store data in ./includes/header/
+                    include ./includes/header/phoneNum.jade
+                block headerImage
+                    //- store data in ./includes/header/
+                    include ./includes/header/headerImage.112914.1.jade
+                block navmenu
+                    //- store data in ./includes/header/
+                    include ./includes/header/navmenu/navmenu.112914.1.jade
+
+    block introduction
+        //- use in index.jade; create a separate jade file to construct area
+    block titleBanner
+        //- used on various pages
+    block introBox
+        //- used on various pages
+    block servicesOffered
+        //- use in services.jade
+    block processSteps
+        //- use in process.jade
+    block gamePlanAudit
+        //- use in audit.jade
+    block gamePlanCTA
+        //- use in audit.jade
+    block caseStudyDisplay
+        //- use in casestudy.jade
+    block caseStudyOffer
+        //- use in casestudy.jade
+    block caseStudyCTA
+        //- use in process.jade and services.jade
+    block blogPostPanel
+        //- use in blog.jade
+    block blogPostTemplate
+        //- use in individual blog posts
+        //- suggest creating a layout template that you extend into the new post
+    block logoPanel
+        //- use in index.jade; create a separate jade file to construct area
+    block specialDisplayArea
+        //- use in index.jade; create a separate jade file to construct area
+    block specialOffers
+        //- use in index.jade; create a separate jade file to construct area
+    block googleMap
+        //- use in index.jade, contact.jade; create a separate jade file to construct area
+        //- contact.jade may use its own version
+    block termsDiv
+    block privacyPolicyDiv
+    block disclaimerDiv
+    block thankyouDiv
+    block confirmSuccessDiv
+    block contactPageDiv
+    block contactSection
+        include ./includes/contactSection/contactSection.112914.1.jade
+    block footer
+        include ./includes/footer/footer.112914.1.jade

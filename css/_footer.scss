@@ -1,0 +1,55 @@
+////////////////////////////////////////////////
+// 		VARIABLES
+////////////////////////////////////////////////
+$footerbasecolour:  $darkerclouds;
+$footerhovercolor: $basecolor;
+$footerbackground: $creditbar;
+
+////////////////////////////////////////////////
+// 		MIXINS
+////////////////////////////////////////////////
+
+////////////////////////////////////////////////
+// 		MAIN CODE
+////////////////////////////////////////////////
+
+section.footer {
+	background: $footerbackground;
+	color: $footerbasecolour;
+	margin: 0;
+	padding: 0;
+	font-size: $basefontsize*0.6;
+	.copyright {
+		display: inline-block;
+		@include column(3);
+		& p {
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+			// margin-right: 1.5%;
+		}
+	}
+	& ul {
+		@include column(9);
+		max-width: 100%;
+		display: inline-block;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		& li {
+			display: inline;
+			& a {
+				text-decoration: none;
+				margin: 0 1% 0 1%;
+				color: $footerbasecolour;
+				&:link {
+					color: $footerbasecolour;
+				}
+				&:hover {
+					color: $footerhovercolor;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}

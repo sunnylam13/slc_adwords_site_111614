@@ -1,0 +1,10 @@
+// the design of the site uses a full-bleed layout
+// that means that within each "section" we should add another div with .wrapper to maintain centring
+// EXCEPTIONS
+// the Google Map sections for index.jade and contact.jade
+
+.wrapper {
+	// max-width: 1280px;
+	max-width: 85%;
+	margin: 0 auto;
+}

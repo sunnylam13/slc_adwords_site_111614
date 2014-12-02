@@ -1,0 +1,48 @@
+////////////////////////////////////////////////
+// 		VARIABLES
+////////////////////////////////////////////////
+
+$basefontsize: 1em; //16px
+$baselineheight: 2em; //24px
+$basefontfamily: 'Open Sans',sans-serif;
+$basecolor: white;
+
+$alizarin: #E74C3C;
+$clouds: #ECF0F1;
+$concrete:#95A5A6; //used on the contact form
+$creditbar: #424A4A;
+$darkerclouds: darken($clouds,10%);
+$darkerconcrete:#7F8C8D;
+$darkgrey: #979797;
+$darkpomme:#960000;
+$dryblood:#791200;
+$drybloodShadow: rgba(121,17,0,0.50);
+$freshblood:#962D22;
+$googlegrey:#9AA4A5;
+$lightconcrete:#E5E5E5;
+$lightcredit:#6D6D6E;
+$lightercred:#808081;
+$midniteblue: #2C3E50;
+$midniteblueL1: lighten($midniteblue,10%);
+$midniteblueL1a: #3a5169;
+$midniteblueL2: lighten($midniteblue,20%);
+$midniteblueL2a: #486582;
+$midniteblueL3: lighten($midniteblue,30%);
+$midniteblueL3a: #56799c;
+$nearwhite:#F7F7F7;
+$pomegranate: #C0392B;
+$semipink:#DB695D;
+$shadeconcrete:#d8d8d8;
+$shadepomme:#AB3326;
+$twittergrey2:#6D8082;
+$twittergrey:#667273;
+
+//////////////////////////////////////////////
+// 		MIXINS
+////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////
+// 		REST OF IT
+////////////////////////////////////////////////
+

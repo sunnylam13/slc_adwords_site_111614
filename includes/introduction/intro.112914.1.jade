@@ -1,0 +1,70 @@
+//- use jQuery to add toggle display:none on the different elements when one of the nav panel's buttons are pressed
+//- the code for all panels will be written out first
+//- section.adwordsManagement will be the default visible one
+
+//- ===================================
+//- MIXINS
+//- ===================================
+
+mixin learnButtons
+	a(href='javascript:void(0)') Lets Dive Into It
+	a(href='javascript:void(0)') Learn More
+
+//- ===================================
+//- MAIN CODE
+//- ===================================
+
+//- ===================================
+//- INTRO SLIDER
+//- ===================================
+
+section.adwordsManagement
+	.wrapper.clearfix
+		div.text
+			h1 Google Adwords Management
+			p If you want hard numbers not guesswork to swell your bottom line we Guarantee a profit increase if you qualify after an Adwords account audit.  
+			p We want to be your long term partner and not just another service you forget about.
+			+learnButtons
+		div.introImage
+			img(src='images/intro/mountains.png', alt='Google Adwords Management')
+			img(src='images/intro/Profit%20Increase.png', alt='Google Adwords Management Profit Increase')
+
+section.adwordsWhyUs
+	.wrapper.clearfix
+		div.text
+			h1 Why Us?
+			p If you want hard numbers not guesswork to swell your bottom line we Guarantee a profit increase if you qualify after an Adwords account audit.  
+			p We want to be your long term partner and not just another service you forget about.
+			+learnButtons
+		div.introImage
+			img(src='images/intro/mountains.png', alt='Google Adwords Management')
+
+section.adwordsClients
+	.wrapper.clearfix
+		div.text
+			h1 Success Stories
+			p If you want hard numbers not guesswork to swell your bottom line we Guarantee a profit increase if you qualify after an Adwords account audit.  
+			p We want to be your long term partner and not just another service you forget about.
+			+learnButtons
+		div.introImage
+			img(src='images/intro/mountains.png', alt='Google Adwords Management')
+
+//- ===================================
+//- NAVIGATION STRIP FOR INTRO SLIDES BELOW
+//- ===================================
+
+section.navstrip
+	.wrapper.clearfix
+		div.sliderControls
+			div.sliderButton
+				a(href='#')
+					img(src="images/intro/sliderControls/Tackle%20It%20For%20Me.png", alt="Google Adwords Management Do It For You")
+			div.sliderButton
+				a(href='#')
+					img(src="images/intro/sliderControls/Why%20Us%3F.png", alt="Google Adwords Management Why Us")
+			div.sliderButton
+				a(href='#')
+					img(src="images/intro/sliderControls/Cheeful%20Clients.png", alt="Google AdWords Management Clients")
+				
+		//- you'll add the white arrow in a circle using css :arrow method
+		a(href='audit.html') Get Your Audit Now

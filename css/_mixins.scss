@@ -1,0 +1,17 @@
+// this file holds universal mixins
+// other files may contain section specific mixins
+
+// this one doesn't work
+@mixin shadow($hor, $ver, $blur, $spread,$color) {
+	-moz-box-shadow: $hor $ver $blur $spread $color;
+	-webkit-box-shadow: $hor $ver $blur $spread $color;
+	-o-box-shadow: $hor $ver $blur $spread $color;
+	box-shadow: $hor $ver $blur $spread $color;
+}
+
+@mixin buttonShadow1($color) {
+	-moz-box-shadow: -1px 4px 1px 0px $color;
+	-webkit-box-shadow: -1px 4px 1px 0px $color;
+	-o-box-shadow: -1px 4px 1px 0px $color;
+	box-shadow: -1px 4px 1px 0px $color;
+}

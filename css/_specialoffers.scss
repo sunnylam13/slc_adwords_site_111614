@@ -1,0 +1,89 @@
+///////////////////////////////////////////////
+// 		VARIABLES
+////////////////////////////////////////////////
+
+$offerBackground: $clouds;
+$offerPadding: 2% 5% 2% 5%;
+$offerCTAcolor: $pomegranate;
+$offerTextColor: $twittergrey2;
+$offerLineColor:  $darkerconcrete;
+
+//////////////////////////////////////////////
+// 		MIXINS
+////////////////////////////////////////////////
+
+@mixin offerDivStd {
+	display: inline-block;
+	@include column(4);
+	background: $offerBackground;
+	// removing width and height allows the grid to work right
+	// max-width: 261px;
+	// max-height: 354px;
+	float: left;
+	text-align: center;
+	padding: $offerPadding;
+	& img {
+		border-radius: 50%;
+		background: $basecolor;
+		padding: 3%;
+		height: 65px;
+		// &:hover {
+		// 	background: lighten($googlegrey,20%);
+		// }
+	}
+	& a {
+		text-decoration: none;
+		color: $offerCTAcolor;
+		font-size: $basefontsize*0.8;
+		&:link {
+			color: $offerCTAcolor;
+		}
+		&:after {
+			display: inline-block;
+			content: url(../images/specialOffers/Offer%20Arrow.png);
+			padding-left: 5%;
+			margin: 0;
+			height: 25%;
+		}
+	}
+	& p {
+		font-size: $basefontsize*0.8;
+		color: $offerTextColor;
+	}
+	& h3 {
+		border-top: 1px solid $offerLineColor;
+		padding: 7% 5% 0 5%;
+		color: $offerTextColor;
+	}
+	& h4 {
+		color: $offerTextColor;
+	}
+}
+
+//////////////////////////////////////////////
+// 		MAIN CODE
+////////////////////////////////////////////////
+
+section.specialOffers {
+	padding-bottom: 5%;
+	& h2 {
+		text-align: center;
+		margin-top: 7%;
+	}
+}
+
+// div.offerShowCase {
+// 	margin: 0 auto;
+// }
+
+div.audit {
+	@include offerDivStd;
+}
+
+div.ppcstrategy {
+	@include offerDivStd;
+}
+
+div.tips {
+	@include offerDivStd;
+}
