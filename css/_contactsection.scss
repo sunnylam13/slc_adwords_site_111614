@@ -139,6 +139,7 @@ div.contactForm {
 				width: $inputWidth;
 				border: 0;
 				margin-top: 5px;
+				@include transitionEffectAll(0.3s);
 				&:hover {
 					background: $semipink;
 				}

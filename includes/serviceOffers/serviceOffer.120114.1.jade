@@ -1,0 +1,47 @@
+//- ===================================
+//- MIXINS
+//- ===================================
+
+//- the blocks don't work in this mixin version; leaving it in for training purposes
+mixin servicePlacehold
+	.serviceBlock
+		block h3
+			h3 Adwords
+		block switchLinks
+			a(href="#") Ongoing Management
+			a(href="#") Build Only
+		block h2
+			h2 Ongoing Management
+		block para
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quos, sint quas enim commodi qui!
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, eius. Eius aliquid, nostrum repellat quaerat.
+		block enquireButton
+			a(href="#") Enquire
+
+mixin servicePlacehold2
+	.serviceBlock
+		if block
+			block
+		else
+			.serveheader
+				h3 Adwords
+				a(href="#") Ongoing Management
+				a(href="#") Build Only
+			.servetext
+				h3 Ongoing Management
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quos, sint quas enim commodi qui!
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, eius. Eius aliquid, nostrum repellat quaerat.
+			a(href="#",class='enquireButton') Enquire
+
+//- ===================================
+//- MAIN CODE
+//- ===================================
+.servicesOffer
+	.wrapper.clearfix
+		+servicePlacehold2
+		+servicePlacehold2
+		+servicePlacehold2
+		+servicePlacehold2
+		+servicePlacehold2
+		+servicePlacehold2
+		+servicePlacehold2

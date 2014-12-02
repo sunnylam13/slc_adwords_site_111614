@@ -1,0 +1,31 @@
+//////////////////////////////////////////////
+// 		VARIABLES
+////////////////////////////////////////////////
+
+
+//////////////////////////////////////////////
+// 		MIXINS
+////////////////////////////////////////////////
+
+
+//////////////////////////////////////////////
+// 		MAIN CODE
+////////////////////////////////////////////////
+
+.introBox {
+	max-height: 452px; //452px
+	width: 43%; //541px
+	background: $basecolor;
+	border: 1px solid $pomegranate;
+	@include introBoxShadow1(rgba(0,0,0,0.50),rgba(192,56,43,0.50));
+	position: absolute;
+	top: 18%;
+	right: 13%;
+	padding: 2.5% 2.5% 3.5% 2.5%;
+	& p {
+		font-family: $basefontfamily;
+		font-size: $basefontsize;
+		color: $creditbar;
+		line-height: $baselineheight*18/24;
+	}
+}

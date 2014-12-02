@@ -42,6 +42,7 @@
 			width: 185px;
 			@include column(6); // this must come last or after display
 			margin-left: 0;
+			@include transitionEffectAll(0.3s);
 			&:nth-of-type(2) {
 				margin-left: 1%;
 			}
@@ -148,6 +149,7 @@ section.navstrip {
 		color: $basecolor;
 		padding-top: 4%;
 		text-align: center;
+		@include transitionEffectAll(0.3s);
 		&:after {
 			content: url(../images/intro/auditarrow.png);
 			margin-left: 10%;
