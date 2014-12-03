@@ -29,3 +29,10 @@
 	-o-transition: all $time;
 	-ms-transition: all $time;
 }
+
+@mixin askQuestionBoxShade($color) {
+	-moz-box-shadow: 0px 4px 1px 0px $color;
+	-webkit-box-shadow: 0px 4px 1px 0px $color;
+	-o-box-shadow: 0px 4px 1px 0px $color;
+	box-shadow: 0px 4px 1px 0px $color;
+}

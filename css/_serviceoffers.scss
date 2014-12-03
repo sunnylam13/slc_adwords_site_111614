@@ -3,6 +3,7 @@
 ////////////////////////////////////////////////
 
 $servefontcolor: black;
+$servefontweight: 400;
 
 //////////////////////////////////////////////
 // 		MIXINS
@@ -24,49 +25,100 @@ $servefontcolor: black;
 	& h3 {
 		color: $servefontcolor;
 	}
-}
 
-.serveheader {
-	display: block;
-	background: $cloudslight;
-	height: 100%;
-	position: relative;
-	padding-top: 18%;
-	padding-bottom: 11%;
-	& h3 {
-		text-align: center;
-	}
-	& a {
-		@include column(6);
-		text-align: center;
-		display: inline-block;
-		font-size: $basefontsize*0.7;
-		text-decoration: none;
-		color: $servefontcolor;
-		&:link {
-			color: $servefontcolor;
-		}
-		&:visited {
-			color: $servefontcolor;
-		}
-		&:nth-of-type(1) {
+	& .serveheader {
+		display: block;
+		background: $cloudslight;
+		height: 100%;
+		position: relative;
+		padding-top: 18%;
+		padding-bottom: 11%;
+		& .circleImage {
 			position: absolute;
-			background: $lightconcrete;
-			bottom: 0;
-			left: 0;
-			margin: 0;
+			background: $basecolor;
+			width: 101px;
+			height: 101px;
+			border-radius: 50%;
+			top: -33.3%;
+			left: 33.3%;
 			@include transitionEffectAll(0.3s);
 		}
-		&:nth-of-type(2) {
+		// adjust the size of the font-awesome icon
+		& .specialIcon {
 			position: absolute;
-			background: $lightconcrete;
-			bottom: 0;
-			right: 0;
-			margin: 0;
-			@include transitionEffectAll(0.3s);
-			&:hover {
-				background: $darkerconcrete;
+			display: block;
+			top: 35.3%;
+			left: 33.3%;
+			color: $darkgrey;
+		}
+		& h3 {
+			text-align: center;
+			font-weight: $servefontweight;
+		}
+		& a {
+			@include column(6);
+			text-align: center;
+			display: inline-block;
+			font-size: $basefontsize*0.7;
+			text-decoration: none;
+			color: $servefontcolor;
+			&:link {
+				color: $servefontcolor;
 			}
+			&:visited {
+				color: $servefontcolor;
+			}
+			&:nth-of-type(1) {
+				position: absolute;
+				background: $lightconcrete;
+				bottom: 0;
+				left: 0;
+				margin: 0;
+				@include transitionEffectAll(0.3s);
+			}
+			&:nth-of-type(2) {
+				position: absolute;
+				background: $lightconcrete;
+				bottom: 0;
+				right: 0;
+				margin: 0;
+				@include transitionEffectAll(0.3s);
+				&:hover {
+					background: $darkerconcrete;
+				}
+			}
+		}
+	}
+
+	& .servetext {
+		background: lighten($clouds,3%);
+		display: block;
+		padding:  7%;
+		@include transitionEffectAll(0.3s);
+		& h3 {
+			text-align: center;
+			font-weight: $servefontweight;
+		}
+		& p {
+			color: $concrete;
+			font-size: $basefontsize*0.8;
+			line-height: $baselineheight*0.8;
+		}
+	}
+
+	& .enquireButton {
+		background: $pomegranate;
+		color: $basecolor;
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		@include transitionEffectAll(0.2s);
+		@include buttonShadow1($creditbar);
+		&:link {
+			color: $basecolor;
+		}
+		&:hover {
+			background: $alizarin;
 		}
 	}
 }
@@ -75,34 +127,57 @@ $servefontcolor: black;
 	background: $darkerconcrete;
 }
 
-.servetext {
-	background: lighten($clouds,3%);
-	display: block;
-	padding:  7%;
-	@include transitionEffectAll(0.3s);
-	& h3 {
-		text-align: center;
-		font-weight: 500;
+.circleactive {
+	background: lighten(lightgrey,10%);
+	// background: #7F8C8D;
+}
+
+.questionBox {
+	@include column(8);
+	position: relative;
+	& img {
+		display: block;
+		@include column(12);
 	}
-	& p {
-		color: $concrete;
-		font-size: $basefontsize*0.8;
-		line-height: $baselineheight*0.8;
+	& .askQuestionBox {
+		position: absolute;
+		top: 0;
+		left: 1%;
+		background: $pomegranate;
+		width: 40%;
+		padding: 1.5% 3% 6% 3%;
+		& p {
+			font-family: $basefontfamily;
+			font-size: $basefontsize*24/16;
+			color: $basecolor;
+			line-height: $baselineheight*29/24;
+			text-align: center;
+		}
+		& a {
+			display: block;
+			margin: 0 auto;
+			width: 80%;
+			height: 38px;
+			text-decoration: none;
+			color: $pomegranate;
+			font-family: $basefontfamily;
+			font-weight: bold;
+			font-size: $basefontsize;
+			line-height: $baselineheight*17/24;
+			background: $basecolor;
+			text-align: center;
+			@include askQuestionBoxShade($freshblood);
+			padding: 4%;
+			text-shadow: 0 0 1px $subtleTextShade;
+
+			&:link {
+				color: $pomegranate;
+			}
+			&:hover {
+				color: $basecolor;
+				background: $alizarin;
+			}
+		}
 	}
 }
 
-& .enquireButton {
-	background: $pomegranate;
-	color: $basecolor;
-	display: block;
-	text-align: center;
-	text-decoration: none;
-	@include transitionEffectAll(0.2s);
-	@include buttonShadow1($creditbar);
-	&:link {
-		color: $basecolor;
-	}
-	&:hover {
-		background: $alizarin;
-	}
-}

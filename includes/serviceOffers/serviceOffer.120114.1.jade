@@ -24,9 +24,11 @@ mixin servicePlacehold2
 			block
 		else
 			.serveheader
+				.circleImage
+					icon.fa.fa-money.specialIcon.fa-2x
 				h3 Adwords
-				a(href="#") Ongoing Management
-				a(href="#") Build Only
+				a(href="javascript:void(0)") Ongoing Management
+				a(href="javascript:void(0)") Build Only
 			.servetext
 				h3 Ongoing Management
 				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quos, sint quas enim commodi qui!
@@ -45,3 +47,8 @@ mixin servicePlacehold2
 		+servicePlacehold2
 		+servicePlacehold2
 		+servicePlacehold2
+		.questionBox
+			img(src="images/serviceOffer/woman-241328_1280.png", alt="Do You Have An Adwords Management Question")
+			.askQuestionBox
+				p Have A Service Question?
+				a(href="javascript:void(0)") Contact Us

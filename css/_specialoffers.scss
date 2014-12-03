@@ -38,13 +38,13 @@ $offerLineColor:  $darkerconcrete;
 		&:link {
 			color: $offerCTAcolor;
 		}
-		&:after {
-			display: inline-block;
-			content: url(../images/specialOffers/Offer%20Arrow.png);
-			padding-left: 5%;
-			margin: 0;
-			height: 25%;
-		}
+		// &:after {
+		// 	display: inline-block;
+		// 	content: url(../images/specialOffers/Offer%20Arrow.png);
+		// 	padding-left: 5%;
+		// 	margin: 0;
+		// 	height: 13px;
+		// }
 	}
 	& p {
 		font-size: $basefontsize*0.8;

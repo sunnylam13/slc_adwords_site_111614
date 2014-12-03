@@ -68,6 +68,7 @@
 				top: 0;
 				left: 0;
 				max-width: 38%;
+				border: 0;
 			}
 		}
 	}
@@ -150,6 +151,7 @@ section.navstrip {
 		padding-top: 4%;
 		text-align: center;
 		@include transitionEffectAll(0.3s);
+		position: relative;
 		&:after {
 			content: url(../images/intro/auditarrow.png);
 			margin-left: 10%;
