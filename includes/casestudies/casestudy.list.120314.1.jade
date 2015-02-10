@@ -1,0 +1,35 @@
+//- ===================================
+//- VARIABLES
+//- ===================================
+
+//- ===================================
+//- MIXINS
+//- ===================================
+
+mixin caseStudyPlaceholder1
+	if block
+		block
+	else
+		.caseStudyBox
+			.logoBox
+				img(src="images/caseStudies/openskej2-w.png", alt="Openskej Online Appointment & Scheduling Software")
+			.caseText
+				h3 Openskej - Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quas animi, sit ipsam perferendis quae vero non repellendus labore, ullam incidunt accusantium iste voluptates similique vel saepe tenetur unde hic perspiciatis quibusdam officiis praesentium. Libero, nihil inventore tempore sint culpa.  
+					span.moreInfoLight Click to read more...
+			.caseTextReveal
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nemo quia, reiciendis repudiandae pariatur cumque accusantium distinctio tempore aspernatur, similique dolore soluta beatae. Repellat ex, fugit suscipit quasi placeat optio.
+			img.commentBoxIcon(src="images/caseStudies/Comment%20Icon%202.png", alt="Click This Image To View The Rest of the Adwords Management Case Study")
+
+//- ===================================
+//- MAIN CODE
+//- ===================================
+.caseStudyList
+	.wrapper.clearfix
+		//- use separate jade files for each case and include them
+		//- for now you can use placeholders
+		+caseStudyPlaceholder1
+		+caseStudyPlaceholder1
+		+caseStudyPlaceholder1
+		+caseStudyPlaceholder1
+		+caseStudyPlaceholder1

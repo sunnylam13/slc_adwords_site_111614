@@ -1,0 +1,115 @@
+//////////////////////////////////////////////
+// 		VARIABLES
+////////////////////////////////////////////////
+
+$procCTABorRad: 5px;
+$procButtonWidth: 17%;
+$procButtonHeight: $procButtonWidth; 
+
+//////////////////////////////////////////////
+// 		MIXINS
+////////////////////////////////////////////////
+
+
+////////////////////////////////////////////
+// 		MAIN CODE
+////////////////////////////////////////////
+
+.processSteps {
+	padding-top: 35%;
+	padding-bottom: 5%;
+	background: $cloudslight;
+}
+
+.processCTAButtons {
+	text-align: center;
+	margin-bottom: 8%;
+	& a {
+		display: inline-block;
+		width: $procButtonWidth;
+		height: $procButtonHeight*0.285714286;
+		background: $darkpomme;
+		border-radius: $procCTABorRad;
+		font-family: $basefontfamily;
+		font-size: $basefontsize;
+		font-weight: bold;
+		color: $basecolor;
+		line-height: $baselineheight*35/24;
+		text-align: center;
+		text-decoration: none;
+		@include transitionEffectAll(0.3s);
+		& link {
+			color: $basecolor;
+		}
+		&:hover {
+			background: lighten($darkpomme,5%);
+		}
+		&:nth-of-type(1) {
+			// padding: 1.5% 6.6% 1.5% 6.6%;
+		}
+		&:nth-of-type(2) {
+			margin-left: 10%;
+			// padding: 1.5% 3% 1.5% 3%;
+
+		}
+	}
+}
+
+.processBlock {
+	// position: relative;
+	height: 184px;
+	@include column(12);
+	margin: 0 auto;
+	margin-bottom: 3%;
+	& .processheader {
+		display: inline-block;
+		background: $lightcredit;
+		// position: absolute;
+		height: 184px;
+		// width: 200px;
+		@include column(3);
+		margin: 0;
+		padding: 3% 0 0 0;
+		&:nth-child(odd) {
+			// top: 0;
+			// right: 0;
+		}
+		&:nth-child(even) {
+			// top: 0;
+			// left: 0;
+		}
+		& h3 {
+			display: block;
+			color: $basecolor;
+			text-align: center;
+			padding: 5% 0 0 0;
+			margin: 0 auto;
+		}
+		& .specialStep {
+			display: block;
+			color: $basecolor;
+			text-align: center;
+			margin: 0 auto;
+		}
+	}
+	& .processtext {
+		display: inline-block;
+		margin: 0;
+		background: $basecolor;
+		height: 184px;
+		@include column(9);
+		// position: absolute;
+		padding: 1.5% 3% 1.5% 3%;
+		& p {
+			color: $lightercred;
+		}
+		&:nth-child(odd) {
+			// top: 0;
+			// left: 0;
+		}
+		&:nth-child(even) {
+			// top: 0;
+			// right: 0;
+		}
+	}
+}

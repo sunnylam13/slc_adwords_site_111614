@@ -1,0 +1,75 @@
+//////////////////////////////////////////////
+// 		VARIABLES
+////////////////////////////////////////////////
+
+
+//////////////////////////////////////////////
+// 		MIXINS
+////////////////////////////////////////////////
+
+
+//////////////////////////////////////////////
+// 		MAIN CODE
+////////////////////////////////////////////////
+
+.caseStudyList {
+	padding-top: 25%;
+	padding-bottom: 5%;
+	background: $cloudslight;
+}
+
+.logoBox {
+	padding-top: 6%;
+	padding-left: 1%;
+}
+
+.caseStudyBox {
+	background: $basecolor;
+	display: inline-block;
+	position: relative;
+	margin-bottom: 3%;
+	& .logoBox {
+		// width: 25%;
+		@include column(3);
+		margin-left: 0;
+		padding-top: 8%;
+		border-bottom: 2px solid $dryblood;
+		height: 14.5em;
+		& img {
+			width: 100%;
+		}
+	}
+	& .caseText {
+		// width: 75%;
+		@include column(9);
+		// position: relative;
+		margin-right: 0;
+		padding-left: 3%;
+		// padding: 2% 2%;
+		& h3 {
+			color: $pomegranate;
+			font-size: $basefontsize*24/16;
+		}
+		& p {
+			color: $lightercred;
+			font-size: $basefontsize*14/16;
+		}
+	}
+	& .caseTextReveal {
+		@include column(9);
+		padding: 0 0 0 3%;
+		display: none;
+		& p {
+			color: $lightercred;
+			font-size: $basefontsize*14/16;
+		}
+	}
+	& img.commentBoxIcon {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	& span.moreInfoLight {
+		font-weight: bold;
+	}
+}

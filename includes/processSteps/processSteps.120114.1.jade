@@ -1,0 +1,46 @@
+//- ===================================
+//- MIXINS
+//- ===================================
+
+mixin processPlaceHold1
+	.processBlock
+		if block
+			block
+		else
+			.processheader
+				.processImage
+					icon.fa.fa-database.specialStep.fa-5x
+				h3 Process Item
+			.processtext
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et illum voluptate reiciendis ipsa quam, voluptatibus enim maiores ipsam eveniet explicabo excepturi beatae qui. Autem voluptas consectetur quos quae natus dicta.
+
+mixin processPlaceHold2
+	.processBlock
+		if block
+			block
+		else
+			.processtext
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et illum voluptate reiciendis ipsa quam, voluptatibus enim maiores ipsam eveniet explicabo excepturi beatae qui. Autem voluptas consectetur quos quae natus dicta.
+			.processheader
+				.processImage
+					icon.fa.fa-database.specialStep.fa-5x
+				h3 Process Item
+
+mixin procCTAButtons
+	.processCTAButtons
+		a(href="javascript:void(0)") Enquire
+		a(href="javascript:void(0)") Other Services
+
+//- ===================================
+//- MAIN CODE
+//- ===================================
+
+.processSteps
+	.wrapper.clearfix
+		+procCTAButtons
+		+processPlaceHold2
+		+processPlaceHold1
+		+processPlaceHold2
+		+processPlaceHold1
+		+processPlaceHold2
+		+procCTAButtons
