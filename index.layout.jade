@@ -3,6 +3,9 @@ html(lang='en')
 head
     include ./includes/meta/meta.base.jade
     block extraMetaData
+        //- Please note that by default I've enabled no robots because I was using this as an example
+        //- comment the no robots code out when you go live
+        meta(name="robots", content="noindex,nofollow")
     block pageTitle
         title Adwords Management - Sunny Lam Consulting
     include ./includes/head/links.jade
